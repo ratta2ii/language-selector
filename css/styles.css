@@ -5,3 +5,15 @@ body {
 .jumbotron {
   background-color: green;              /* Update Later */
 }
+
+
+
+
+
+.result-para {
+  display: none;
+}
+
+.tie-result-para {
+  display: none;
+}
