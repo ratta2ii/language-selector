@@ -75,18 +75,22 @@ $(document).ready(function () {
       cCounter += 1;
     }
 
+// Final text to inserted in spans within paragraphs.
 
-    function highest(...args) {
-      return Math.max(...args);
+    if (jsCounter >= 3){
+      $("#single-result").text("Javascript");
+      $(".result-para").show();
     }
 
-    var winningLanguage = highest(jsCounter, rubyCounter, cCounter);
-    alert(winningLanguage + " means that JS is the best suited language.");
+
 
 
 
 
     jsCounter = 0;
+    rubyCounter = 0;
+    cCounter = 0;
+
 
 
 
