@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Asap:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
@@ -10,18 +11,21 @@
   </head>
   <body>
 
-    <div class="jumbotron">
-      <h1>Language Selector</h1>
-      <h3>Instructions: Please complete the survey below to find the best language to begin your programming journey.</h3>
-    </div>
-
     <div class="container">
+
+      <div class="jumbotron">
+        <h1>Language Selector</h1>
+      </div>
+
+      <h2>Instructions: </h2>
+      <h4> Please complete the survey below to find the best language to begin your programming journey.</h4>
 
       <form id="survey-form" class="" action="index.html" method="post">
 
         <div class="form-group">
           <label for="question-1">Which one these colors do you prefer?</label>
           <select id="question-1" class="" name="">
+            <option selected="selected">Please choose one of the following.</option>
             <option value="1">Blue</option>
             <option value="2">Red</option>
             <option value="3">Green</option>
@@ -29,45 +33,49 @@
         </div>
 
         <div class="form-group">
-          <label for="question-2">Why are you learning the language?</label>
+          <label for="question-2">What reason fits your reason to program the most?</label>
           <select id="question-2" class="" name="">
-            <option value="1">JS Answer</option>
-            <option value="2">Ruby Answer</option>
-            <option value="3">C# Answer</option>
+            <option selected="selected">Please choose one of the following.</option>
+            <option value="1">To build functionality into websites</option>
+            <option value="2">Design websites and other apps</option>
+            <option value="3">To work at Micorsoft</option>
           </select>
         </div>
 
 
         <div class="form-group">
-          <label for="question-3">Do you prefer frontend, backend, or unsure?</label>
+          <label for="question-3">Do you prefer Frontend, Backend, or Both?</label>
           <select id="question-3" class="" name="">
-            <option value="1">JS Answer</option>
-            <option value="2">Ruby Answer</option>
-            <option value="3">C# Answer</option>
+            <option selected="selected">Please choose one of the following.</option>
+            <option value="1">Both</option>
+            <option value="2">Frontend</option>
+            <option value="3">Backend</option>
           </select>
         </div>
 
 
         <div class="form-group">
-          <label for="question-4">Before taking this survey....?</label>
+          <label for="question-4">Choose which one of these statements fits you the most.</label>
           <select id="question-4" class="" name="">
-            <option value="1">JS Answer</option>
-            <option value="2">Ruby Answer</option>
-            <option value="3">C# Answer</option>
+            <option selected="selected">Please choose one of the following.</option>
+            <option value="1">I like waffles</option>
+            <option value="2">I like hamburgers</option>
+            <option value="3">No to waffles and hamburgers</option>
           </select>
         </div>
 
 
         <div class="form-group">
-          <label for="question-5">Which one these colors do you prefer?</label>
+          <label for="question-5">Which of these is these days do you prefer the most?</label>
           <select id="question-5" class="" name="">
-            <option value="1">JS Answer</option>
-            <option value="2">Ruby Answer</option>
-            <option value="3">C# Answer</option>
+            <option selected="selected">Please choose one of the following.</option>
+            <option value="1">Thursday</option>
+            <option value="2">Friday</option>
+            <option value="3">Saturday</option>
           </select>
         </div>
 
-        <button type="submit" name="button">Submit</button>
+        <button type="submit" name="button">Submit Form</button>
 
       </form>     <!-- End of form -->
 

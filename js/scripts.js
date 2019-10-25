@@ -10,7 +10,7 @@ $(document).ready(function () {
     var fifthAnswer = parseInt($("#question-5").val());
 
     let jsCounter = 0;
-    let rubyCounter = 0;
+    let cssCounter = 0;
     let cCounter = 0;
 
 // Question One
@@ -19,7 +19,7 @@ $(document).ready(function () {
       jsCounter += 1;
     }
     else if (firstAnswer === 2){
-      rubyCounter += 1;
+      cssCounter += 1;
     }
     else {
       cCounter += 1;
@@ -31,7 +31,7 @@ $(document).ready(function () {
       jsCounter += 1;
     }
     else if (secondAnswer === 2){
-      rubyCounter += 1;
+      cssCounter += 1;
     }
     else {
       cCounter += 1;
@@ -43,7 +43,7 @@ $(document).ready(function () {
       jsCounter += 1;
     }
     else if (thirdAnswer === 2){
-      rubyCounter += 1;
+      cssCounter += 1;
     }
     else {
       cCounter += 1;
@@ -55,7 +55,7 @@ $(document).ready(function () {
       jsCounter += 1;
     }
     else if (fourthAnswer === 2){
-      rubyCounter += 1;
+      cssCounter += 1;
     }
     else {
       cCounter += 1;
@@ -67,7 +67,7 @@ $(document).ready(function () {
       jsCounter += 1;
     }
     else if (fifthAnswer === 2){
-      rubyCounter += 1;
+      cssCounter += 1;
     }
     else {
       cCounter += 1;
@@ -82,8 +82,8 @@ $(document).ready(function () {
     }
 
     if (jsCounter === 2){
-      if (rubyCounter === 2){
-        $("#tie-second-result").empty().append("Ruby");
+      if (cssCounter === 2){
+        $("#tie-second-result").empty().append("CSS");
       }
       else {
         $("#tie-second-result").text("C#")
@@ -93,15 +93,15 @@ $(document).ready(function () {
       $(".tie-result-para").show();
     }
 
-    if (rubyCounter >= 3){
+    if (cssCounter >= 3){
       $(".tie-result-para").hide();
-      $("#single-result").empty().append("Ruby");
+      $("#single-result").empty().append("CSS");
       $(".result-para").show();
     }
 
-    if (rubyCounter === 2 && cCounter === 2){
+    if (cssCounter === 2 && cCounter === 2){
       $(".result-para").hide();
-      $("#tie-first-result").empty().append("Ruby");
+      $("#tie-first-result").empty().append("CSS");
       $("#tie-second-result").empty().append("C#");
       $(".tie-result-para").show();
     }
@@ -113,7 +113,7 @@ $(document).ready(function () {
     }
 
     jsCounter = 0;
-    rubyCounter = 0;
+    cssCounter = 0;
     cCounter = 0;
 
   });

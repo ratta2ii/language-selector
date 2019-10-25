@@ -1,19 +1,53 @@
 body {
-  background-color: lightgreen;
+  background-color: #407F7F;
 }
 
 .jumbotron {
-  background-color: green;              /* Update Later */
+  background-color: #D49A6A;              /* Update Later */
+  margin: 50px auto;
 }
 
+.jumbotron h1 {
+  font-family: 'Asap', sans-serif;
+  text-align: center;
+}
 
-
-
+h2 {
+  font-family: 'Asap', sans-serif;
+}
 
 .result-para {
   display: none;
 }
 
+h4 {
+  width: 40%;
+}
+
 .tie-result-para {
   display: none;
+}
+
+.form-group {
+  margin-top: 35px;
+}
+
+button {
+  background-color: #0D4D4D;
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: white;
+  padding: 5px 10px;
+  margin: 50px auto;
+}
+
+.container {
+  background-color: #D46A6A;
+  padding: 50px;
+  magin-top: 25px;
+}
+
+select {
+  float: right;
+  margin-right: 40%;
 }
