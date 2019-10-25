@@ -13,8 +13,6 @@ $(document).ready(function () {
     let cssCounter = 0;
     let cCounter = 0;
 
-// Question One
-
     if (firstAnswer === 1){
       jsCounter += 1;
     }
@@ -24,8 +22,6 @@ $(document).ready(function () {
     else {
       cCounter += 1;
     }
-
-// Question Two
 
     if (secondAnswer === 1){
       jsCounter += 1;
@@ -37,8 +33,6 @@ $(document).ready(function () {
       cCounter += 1;
     }
 
-// Third Answer
-
     if (thirdAnswer === 1){
       jsCounter += 1;
     }
@@ -48,8 +42,6 @@ $(document).ready(function () {
     else {
       cCounter += 1;
     }
-
-// Fourth Answer
 
     if (fourthAnswer === 1){
       jsCounter += 1;
@@ -61,8 +53,6 @@ $(document).ready(function () {
       cCounter += 1;
     }
 
-// Fifth Answer
-
     if (fifthAnswer === 1){
       jsCounter += 1;
     }
@@ -72,8 +62,6 @@ $(document).ready(function () {
     else {
       cCounter += 1;
     }
-
-// Based on counters, call elements with jQuery, insert text, and display paragraph.
 
     if (jsCounter >= 3){
       $(".tie-result-para").hide();

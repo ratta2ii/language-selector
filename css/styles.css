@@ -2,8 +2,14 @@ body {
   background-color: #407F7F;
 }
 
+.container {
+  background-color: #D46A6A;
+  padding: 50px;
+  magin-top: 25px;
+}
+
 .jumbotron {
-  background-color: #D49A6A;              /* Update Later */
+  background-color: #D49A6A;
   margin: 50px auto;
 }
 
@@ -16,20 +22,25 @@ h2 {
   font-family: 'Asap', sans-serif;
 }
 
-.result-para {
-  display: none;
-}
-
 h4 {
   width: 40%;
 }
 
-.tie-result-para {
+.form-group {
+  margin-top: 35px;
+}
+
+select {
+  float: right;
+  margin-right: 40%;
+}
+
+.result-para {
   display: none;
 }
 
-.form-group {
-  margin-top: 35px;
+.tie-result-para {
+  display: none;
 }
 
 button {
@@ -39,15 +50,4 @@ button {
   color: white;
   padding: 5px 10px;
   margin: 50px auto;
-}
-
-.container {
-  background-color: #D46A6A;
-  padding: 50px;
-  magin-top: 25px;
-}
-
-select {
-  float: right;
-  margin-right: 40%;
 }
