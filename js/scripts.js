@@ -9,59 +9,31 @@ $(document).ready(function () {
     var fourthAnswer = parseInt($("#question-4").val());
     var fifthAnswer = parseInt($("#question-5").val());
 
+
     let jsCounter = 0;
     let cssCounter = 0;
     let cCounter = 0;
 
-    if (firstAnswer === 1){
-      jsCounter += 1;
-    }
-    else if (firstAnswer === 2){
-      cssCounter += 1;
-    }
-    else {
-      cCounter += 1;
-    }
 
-    if (secondAnswer === 1){
-      jsCounter += 1;
-    }
-    else if (secondAnswer === 2){
-      cssCounter += 1;
-    }
-    else {
-      cCounter += 1;
-    }
+    var answerArray = [firstAnswer, secondAnswer, thirdAnswer, fourthAnswer, fifthAnswer];
 
-    if (thirdAnswer === 1){
-      jsCounter += 1;
-    }
-    else if (thirdAnswer === 2){
-      cssCounter += 1;
-    }
-    else {
-      cCounter += 1;
-    }
 
-    if (fourthAnswer === 1){
-      jsCounter += 1;
+    for (let i = 0; i < answerArray.length; i++){
+      if (isNaN(answerArray[i]) === true){
+        alert("Please complete the empty fields, then hit the SUBMIT BUTTON again.");
+        break;
+      }
+      if (answerArray[i] === 1){
+        jsCounter += 1;
+      }
+      if (answerArray[i] === 2){
+        cssCounter += 1;
+      }
+      if (answerArray[i] === 3){
+        cCounter += 1;
+      }
     }
-    else if (fourthAnswer === 2){
-      cssCounter += 1;
-    }
-    else {
-      cCounter += 1;
-    }
-
-    if (fifthAnswer === 1){
-      jsCounter += 1;
-    }
-    else if (fifthAnswer === 2){
-      cssCounter += 1;
-    }
-    else {
-      cCounter += 1;
-    }
+    
 
     if (jsCounter >= 3){
       $(".tie-result-para").hide();
