@@ -44,7 +44,7 @@ select {
 }
 
 button {
-  background-color: cornflowerblue;        /* #0D4D4D */
+  background-color: cornflowerblue;       
   border-radius: 5px;
   font-size: 1.2em;
   color: white;
