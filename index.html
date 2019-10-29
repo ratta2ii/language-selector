@@ -10,18 +10,13 @@
     <title>Javascript Language Selector</title>
   </head>
   <body>
-
     <div class="container">
-
       <div class="jumbotron">
         <h1>Language Selector</h1>
       </div>
-
       <h2>Instructions: </h2>
-      <h4> Please complete the survey below to find the best language to begin your programming journey.</h4>
-
+      <h4>Complete the survey below to find the best programming language to start with.</h4>
       <form id="survey-form" class="" action="index.html" method="post">
-
         <div class="form-group">
           <label for="question-1">Which one these colors do you prefer?</label>
           <select id="question-1">
@@ -31,7 +26,6 @@
             <option value="3">Green</option>
           </select>
         </div>
-
         <div class="form-group">
           <label for="question-2">What reason fits your reason to program the most?</label>
           <select id="question-2">
@@ -41,7 +35,6 @@
             <option value="3">To work at Micorsoft</option>
           </select>
         </div>
-
         <div class="form-group">
           <label for="question-3">Do you prefer Frontend, Backend, or Both?</label>
           <select id="question-3">
@@ -51,7 +44,6 @@
             <option value="3">Backend</option>
           </select>
         </div>
-
         <div class="form-group">
           <label for="question-4">Choose which one of these statements fits you the most.</label>
           <select id="question-4">
@@ -61,7 +53,6 @@
             <option value="3">No to waffles and hamburgers</option>
           </select>
         </div>
-
         <div class="form-group">
           <label for="question-5">Which of these days do you prefer the most?</label>
           <select id="question-5">
@@ -71,20 +62,22 @@
             <option value="3">Saturday</option>
           </select>
         </div>
-
         <button type="submit" name="button">Submit Form</button>
-
       </form>
-
       <div class="result-para">
-        <h2>The best language for you to learn is <span id="single-result"></span>.</h2>
+        <div class="panel">
+          <div class="panel-body">
+            <h3>The best language for you to learn is <span id="single-result"></span>.</h3>
+          </div>
+        </div>
       </div>
-
       <div class="tie-result-para">
-        <h2>Based on your answers, it looks like there is a tie between 2 languages that are best suitable for you. You can choose between <span id="tie-first-result"></span> and <span id="tie-second-result"></span>. Good luck!</h2>
+        <div class="panel">
+          <div class="panel-body">
+            <h3>Based on your answers, it looks like there is a tie between 2 languages that are best suitable for you. You can choose between <span id="tie-first-result"></span> and <span id="tie-second-result"></span>. Good luck!</h3>
+          </div>
+        </div>
       </div>
-
     </div>
-
   </body>
 </html>
